@@ -6,7 +6,6 @@ import {CacheStorage} from './core/cache-storage';
 import {CanvasRenderer, RenderConfigurations, RenderOptions} from './render/canvas/canvas-renderer';
 import {ForeignObjectRenderer} from './render/canvas/foreignobject-renderer';
 import {Context, ContextOptions} from './core/context';
-
 export type Options = CloneOptions &
     WindowOptions &
     RenderOptions &
