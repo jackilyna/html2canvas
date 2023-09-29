@@ -12,7 +12,6 @@ const IMAGE = /^Image\s+\("(.+)"\)\s+\(source:\s+\[(-?\d+), (-?\d+), (-?\d+), (-
 const CANVAS = /^(Canvas)\s+\(source:\s+\[(-?\d+), (-?\d+), (-?\d+), (-?\d+)\]\)\s+\(destination:\s+\[(-?\d+), (-?\d+), (-?\d+), (-?\d+)\]\)$/;
 const GRADIENT = /^\[(-?\d+), (-?\d+), (-?\d+), (-?\d+)\]\s+linear-gradient\(x0: (-?\d+), x1: (-?\d+), y0: (-?\d+), y1: (-?\d+) (.+)\)$/;
 const TRANSFORM = /^\((-?\d+), (-?\d+)\) \[(.+)\]$/;
-
 function parsePath(path) {
     const parts = path.match(PATH)[1];
     return parts.split(' > ').map(p => {
